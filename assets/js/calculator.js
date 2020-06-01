@@ -1,10 +1,16 @@
-function Calc (firstDay,month,year){
+function calendar(){
+    var date = document.getElementById("firstDay").innerHTML;
+ 
+    console.log(date);
+    
+}
+function calc (firstDay,month,year){
     
     
 
     switch (month){
         case 'Jan': 
-            if(year%4){
+            if(year%4==0){
                 var x = (31-firstDay)+8;
                 if(x<31){
                     return Console.log("Your Due date"+x+"October"+year)
@@ -21,7 +27,7 @@ function Calc (firstDay,month,year){
                 }
              }               
         case 'Feb':
-            if(year%4){
+            if(year%4==0){
                 var x=firstDay+6;
                 if(x<30){
                     return Console.log("Your Due date is"+x+"November"+year)
@@ -57,7 +63,7 @@ function Calc (firstDay,month,year){
                         return console.log("Your Due date is"+x+"February"+year+1);
                     }
         case 'May': 
-            if(year%4){
+            if(year%4==0){
                     var x=firstDay+4;
                     if(x<29){
                         return Console.log("Your Due date is"+x+"February"+year+1)
